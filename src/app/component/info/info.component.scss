@@ -1,5 +1,6 @@
 .info-card{
   padding: 5rem 10rem;
+  color: white;
 
 }
 
@@ -21,28 +22,22 @@
   }
 }
 
-.button {background: #3498db;
-  background-image: -webkit-linear-gradient(top, #3498db, #2bb8ac);
-  background-image: -moz-linear-gradient(top, #3498db, #2bb8ac);
-  background-image: -ms-linear-gradient(top, #3498db, #2bb8ac);
-  background-image: -o-linear-gradient(top, #3498db, #2bb8ac);
-  background-image: linear-gradient(to bottom, #3498db, #2bb8ac);
-  -webkit-border-radius: 40;
-  -moz-border-radius: 40;
-  border-radius: 40px;
+
+.button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
   font-family: Arial;
-  color: #ffffff;
+  color: white;
+  background: #232526;
   padding: 10px 20px 10px 20px;
-  border: solid #0684c7 3px;
+  border: solid #4060f5 2px;
   text-decoration: none;
 }
 
 .button:hover {
-  background: #ffffff;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  background: #d5d5d5;
+  border: solid #ffffff 2px;
+  color: #030303;
   text-decoration: none;
 }
