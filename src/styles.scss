@@ -5,12 +5,13 @@
 
 @import "variables";
 
-
 .container{
   padding-left: 10%;
   padding-right: 10%;
 }
-
+.image-grayscale{
+  filter: grayscale(30%);
+}
 body{
   background-color: $background_color;
 }

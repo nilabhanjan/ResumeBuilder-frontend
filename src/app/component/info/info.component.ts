@@ -2,6 +2,7 @@ import {Component, HostListener, OnDestroy, OnInit} from '@angular/core';
 import {UserService} from "../../../services/user.service";
 import {Subscription} from "rxjs";
 import {UserModel} from "../../models/user.model"
+import {ClassService} from "../../../services/class.service";
 @Component({
   selector: 'app-info',
   templateUrl: './info.component.html',
@@ -10,8 +11,10 @@ import {UserModel} from "../../models/user.model"
 export class InfoComponent implements OnInit, OnDestroy {
 
   subscription:Subscription
+  subscription2:Subscription
   user?:UserModel
-  imageUrl:string="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgg5a8Gg2nOh5UJXl2ZBFxcu2Xd3NpBPJ1ng&usqp=CAU"
+  darkMode:boolean=false
+  imageUrl:string="https://static.toiimg.com/photo/msid-88428723/88428723.jpg?24468"
   mouseCoordinates:{x:number,y:number}={x:0,y:0}
   myinfo: UserModel={
     name:"Nilabh Anajn Chutia",
@@ -19,10 +22,13 @@ export class InfoComponent implements OnInit, OnDestroy {
     description:"Freshly Graduate in Master of Science Information Technology looking for an opportunity to move ahead in career."
   }
 
-  constructor(private userService: UserService) {
+  constructor(private userService: UserService,private classService:ClassService) {
    this.subscription = userService.getUserDetails().subscribe((user)=>{
       this.user =user
    })
+    this.subscription2 = classService.getDarkMode().subscribe((value)=>{
+      this.darkMode= value
+    })
   }
 
   @HostListener('mousemove', ['$event']) onMouseMove(event: any) {
