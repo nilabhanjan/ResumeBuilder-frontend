@@ -11,6 +11,11 @@ export class InfoComponent implements OnInit, OnDestroy {
 
   subscription:Subscription
   user?:UserModel
+  myinfo: UserModel={
+    name:"Nilabh Anajn Chutia",
+    designation:"Frontend-Developer",
+    description:"Freshly Graduate in Master of Science Information Technology looking for an opportunity to move ahead in career."
+  }
   constructor(private userService: UserService) {
    this.subscription = userService.getUserDetails().subscribe((user)=>{
       this.user =user
@@ -18,7 +23,7 @@ export class InfoComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this.userService.setUserDetails({name:"Nilav Anjan",description:"sdawdawd",designation:"Frontend-Developer"})
+    this.userService.setUserDetails(this.myinfo)
   }
 
   ngOnDestroy() {
