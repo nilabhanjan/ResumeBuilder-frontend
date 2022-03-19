@@ -7,13 +7,16 @@ import { MenubarComponent } from './shared/component/menubar/menubar.component';
 import { InfoComponent } from './component/info/info.component';
 import { TestimonialComponent } from './component/testimonial/testimonial.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MiddleComponent } from './component/middle/middle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenubarComponent,
     InfoComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    InfoComponent,
+    MiddleComponent
   ],
   imports: [
     BrowserModule,
