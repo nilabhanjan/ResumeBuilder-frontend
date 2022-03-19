@@ -7,12 +7,9 @@
       </div>
     </div>
     <div class="col-span-2 pl-10">
-      <span class="text-gray-400  font-light pb-5">Frontend-Developer</span>
-      <h1 class="pb-5">Nilabh Anjan Chutia</h1>
-      <p class="text-justify pb-5">Fusce tempor magna mi, non egestas velit ultricies nec. Aenean convallis,
-        risus non condimentum gravida,
-        odio mauris ullamcorper felis, ut venenatis purus ex eu mi.
-        Quisque imperdiet lacinia urna, a placerat sapien pretium eu.</p>
+      <span class="text-gray-400  font-light pb-5">{{user?.designation}}</span>
+      <h1 class="pb-5">{{user?.name}}</h1>
+      <p class="text-justify pb-5" >{{user?.description!}}</p>
       <div>
       <button class="button border-blue-500 hover:bg-blue-500 hover:text-white">Download CV</button>
       <button class="button border-gray-400 hover:bg-gray-400  ml-5">Contact</button>
