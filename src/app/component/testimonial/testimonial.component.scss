@@ -1,0 +1,64 @@
+.testimonial{
+  &-content{
+    position: relative;
+    padding: 30px 20px 20px 60px;
+    //background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid #e5e5e5;
+    transition: all .25s ease-in-out;
+    z-index: 10;
+  }
+  &-picture{
+    position: absolute;
+    display: block;
+    top: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    >img{
+      border-radius: 80px;
+      max-width: 100%;
+      height: auto;
+      border: 0;
+    }
+  }
+  &-text{
+    font-style: italic;
+  }
+  &-author{
+    margin-top: 15px;
+    &-info{
+      margin: 0 0 2px;
+      font-size: .9em;
+      font-weight: 600;
+      font-style: normal;
+    }
+    &-firm{
+        margin: 0;
+        font-size: .8em;
+        color: #bbb;
+    }
+  }
+  &-icon{
+    display: block;
+    line-height: 20px;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    bottom: 46px;
+    color: #e5e5e5;
+    &-big{
+      display: block;
+      line-height: 44px;
+      font-size: 44px;
+      position: absolute;
+      right: -24px;
+      bottom: -24px;
+      color: #f5f5f5;
+      z-index: -1;
+    }
+  }
+}
+.slider{
+  padding: 2rem 0;
+}

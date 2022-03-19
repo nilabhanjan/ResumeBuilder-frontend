@@ -5,16 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenubarComponent } from './shared/component/menubar/menubar.component';
 import { InfoComponent } from './component/info/info.component';
+import { TestimonialComponent } from './component/testimonial/testimonial.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenubarComponent,
-    InfoComponent
+    InfoComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
