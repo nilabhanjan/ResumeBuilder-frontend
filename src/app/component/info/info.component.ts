@@ -33,6 +33,13 @@ export class InfoComponent implements OnInit, OnDestroy {
     }
   }
 
+  getImageStyle(url:string){
+    return {
+      backgroundPosition: `calc(50% + ${this.mouseCoordinates.x}px) calc(50% + ${this.mouseCoordinates.y}px)`,
+      backgroundImage:`url(${url})`
+    }
+  }
+
   ngOnInit(): void {
     this.userService.setUserDetails(this.myinfo)
   }

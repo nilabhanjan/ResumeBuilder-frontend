@@ -4,10 +4,7 @@
       <div class="col-span-12 lg:col-span-5">
         <div class="circle border-white dark:border-gray-700 shadow-2xl">
           <div class="circle-inner"
-               [style]="{
-               'background-position':'cal(50% +'+mouseCoordinates.x+'px) calc(50% + '+mouseCoordinates.y+'px)',
-               'background-image':'url('+imageUrl+')'
-               }"
+               [style]=getImageStyle(imageUrl)
           ></div>
         </div>
       </div>
