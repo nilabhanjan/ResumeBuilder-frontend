@@ -21,3 +21,41 @@
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent
 }
+
+.text-logo{
+  float: left;
+  >a{
+    outline: none;
+    color: #09c;
+    text-decoration: none;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+  }
+
+}
+.logo{
+  &-symbol{
+    float: left;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    background-color :#007ced;
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    margin-right: 8px;
+    margin-top: 4px;
+  }
+  &-text{
+    float: left;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    >span{
+      font-weight: 400;
+    }
+  }
+}
+

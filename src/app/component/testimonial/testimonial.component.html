@@ -1,12 +1,12 @@
 <div class="container dark:text-white">
   <div class="p-2"></div>
-  <div class="block-title pb2 mb-1">
+  <div class="block-title pb2 mb-1" [ngClass]="{'dark-h2-after':darkMode}">
     <h2>Testimonials</h2>
   </div>
   <div class="slider">
     <div class="testimonial ">
       <div class="testimonial-box">
-        <div class="testimonial-content">
+        <div class="testimonial-content border-gray-300 dark:border-gray-500">
           <div class="testimonial-picture">
             <img src="https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/testimonial-1.jpg" alt="Gary Johnson">
           </div>
@@ -17,10 +17,10 @@
             <h5 class="testimonial-author-info">Hero Hiralal</h5>
             <p class="testimonial-author-firm"> Locost Accessories</p>
           </div>
-          <div class="testimonial-icon">
+          <div class="testimonial-icon text-gray-200 dark:text-gray-400">
             <fa-icon [icon]="faQuoteLeft"></fa-icon>
           </div>
-          <div class="testimonial-icon-big">
+          <div class="testimonial-icon-big text-gray-200 dark:text-gray-400">
             <fa-icon [icon]="faQuoteRight"></fa-icon>
           </div>
         </div>
