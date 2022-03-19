@@ -1,0 +1,22 @@
+.info-card{
+  padding: 5rem 10rem;
+
+}
+
+.circle{
+  display: block;
+  $imageSize: 18rem;
+  height: $imageSize;
+  width: $imageSize;
+  border-radius: 50% !important;
+  overflow: hidden;
+  border: 1rem solid #cb1515;
+  >img{
+    width: 400px;
+    height: 400px;
+    ////position: absolute;
+    //height: calc(#{$imageSize} - 2rem);
+    //width: calc(#{$imageSize} - 2rem);
+    //border-radius: 50% !important;
+  }
+}

@@ -4,3 +4,13 @@
 @tailwind utilities;
 
 @import "variables";
+
+
+.container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+body{
+  background-color: $background_color;
+}
