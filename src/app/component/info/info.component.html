@@ -1,20 +1,25 @@
-<div class="info-card">
-
-  <div class="grid grid-cols-3 dark:text-white">
-    <div>
-      <div class="circle border-white dark:border-gray-700 shadow-2xl">
-        <img src="https://pocket-image-cache.com/direct?resize=w2000&url=https%3A%2F%2Fwww.stylist.co.uk%2Fimages%2Fapp%2Fuploads%2F2020%2F08%2F18094850%2Fpower-napping-sleep-benefits-crop-1597740680-1680x1120.jpg%3Fw%3D1200%26h%3D1%26fit%3Dmax%26auto%3Dformat%252Ccompress"  alt="profile_img"/>
-      </div>
-    </div>
-    <div class="col-span-2 pl-10">
-      <span class="text-gray-400  font-light pb-5">{{user?.designation}}</span>
-      <h1 class="pb-5">{{user?.name}}</h1>
-      <p class="text-justify pb-5" >{{user?.description!}}</p>
-      <div>
-      <button class="button border-blue-500 hover:bg-blue-500 hover:text-white">Download CV</button>
-      <button class="button border-gray-400 hover:bg-gray-400  ml-5">Contact</button>
+<div class="container">
+  <div class="info-card">
+    <div class="grid grid-cols-12 dark:text-white">
+      <div class="col-span-12 lg:col-span-5">
+        <div class="circle border-white dark:border-gray-700 shadow-2xl">
+          <div class="circle-inner"
+               [style]="{
+               'background-position':'cal(50% +'+mouseCoordinates.x+'px) calc(50% + '+mouseCoordinates.y+'px)',
+               'background-image':'url('+imageUrl+')'
+               }"
+          ></div>
         </div>
+      </div>
+      <div class="col-span-12 lg:col-span-7 pl-10">
+        <span class="text-gray-400  font-light pb-5">{{user?.designation}}</span>
+        <h1 class="pb-5">{{user?.name}}</h1>
+        <p class="text-justify pb-5">{{user?.description!}}</p>
+        <div class="text-sm">
+          <button class="button border-blue-500 hover:bg-blue-500 hover:text-white">Download CV</button>
+          <button class="button border-gray-400 hover:bg-gray-400  ml-5">Contact</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
