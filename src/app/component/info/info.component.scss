@@ -1,6 +1,6 @@
 .info-card{
   padding: 5rem 10rem;
-  color: white;
+
 
 }
 
@@ -11,7 +11,9 @@
   width: $imageSize;
   border-radius: 50% !important;
   overflow: hidden;
-  border: 1rem solid white;
+  border-width: 1rem;
+  border-style: solid;
+
   >img{
     width: 100%;
     height: 100%;
@@ -24,20 +26,13 @@
 
 
 .button {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
   border-radius: 28px;
-  font-family: Arial;
-  color: white;
-  background: #232526;
-  padding: 10px 20px 10px 20px;
-  border: solid #4060f5 2px;
+  padding: 0.7rem 3rem;
+  border-width: 2px;
+  border-style: solid;
   text-decoration: none;
+  &:hover{
+
+ }
 }
 
-.button:hover {
-  background: #d5d5d5;
-  border: solid #ffffff 2px;
-  color: #030303;
-  text-decoration: none;
-}
