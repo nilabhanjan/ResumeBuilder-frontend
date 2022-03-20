@@ -1,5 +1,5 @@
-<div class="container">
-  <div class="info-card">
+<div class="container mt-10">
+  <div class="info-card lg:mx-20 lg:my-10">
     <div class="grid grid-cols-12 dark:text-white">
       <div class="col-span-12 lg:col-span-5">
         <div class="circle border-white dark:border-gray-700 shadow-2xl">
@@ -8,13 +8,15 @@
           ></div>
         </div>
       </div>
-      <div class="col-span-12 lg:col-span-7 pl-10">
+      <div class="col-span-12 lg:col-span-7 lg:pl-10 mt-5">
         <span class="text-gray-400  font-light pb-5">{{user?.designation}}</span>
         <h1 class="pb-5">{{user?.name}}</h1>
         <p class="text-justify pb-5">{{user?.description!}}</p>
-        <div class="text-sm">
-          <button class="button border-blue-500 hover:bg-blue-500 hover:text-white mb-5">Download CV</button>
-          <button class="button border-green-400 dark:border-green-500 hover:bg-green-400 dark:hover:bg-green-500  ml-5 mb-5 ">Contact</button>
+        <div class="text-sm ">
+          <button class="button lg:px-12 lg:py-4 px-7 py-4
+          border-blue-500 hover:bg-blue-500 hover:text-white mb-5 ">Download CV</button>
+          <button class="button lg:px-12 lg:py-4 px-7 py-4 ml-5
+          border-green-400 dark:border-green-500 hover:bg-green-400 dark:hover:bg-green-500 mb-5 ">Contact</button>
         </div>
       </div>
     </div>
