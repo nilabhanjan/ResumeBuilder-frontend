@@ -30,15 +30,34 @@ export class TestimonialComponent implements OnInit,OnDestroy {
         items: 2
       },
       740: {
-        items: 3
+        items: 2
       },
       940: {
-        items: 4
+        items: 2
       }
     },
     nav: true
   }
-
+  testimonialArray:{name:string,text:string,image_url:string,firm:string}[] =[
+    {
+    name:'Gary Johnson',
+    text:'Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.',
+    image_url:'https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/testimonial-1.jpg',
+    firm:'Locost Accessories'
+  },
+    {
+      name:'Gary Johnson',
+      text:'Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.',
+      image_url:'https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/testimonial-1.jpg',
+      firm:'Locost Accessories'
+    },
+    {
+      name:'Gary Johnson',
+      text:'Nam tempor commodo mi id sodales. Aenean sit amet nibh nec sapien consequat porta a sit amet diam.',
+      image_url:'https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/testimonial-1.jpg',
+      firm:'Locost Accessories'
+    },
+  ]
   constructor(private classService:ClassService) {
     this.subscription=classService.getDarkMode().subscribe((value)=>{
       this.darkMode = value
