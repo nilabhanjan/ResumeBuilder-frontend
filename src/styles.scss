@@ -14,7 +14,10 @@
   filter: grayscale(30%);
 }
 body{
-  background-color: $background_color;
+  background-image: url("/assets/images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //background-color: $background_color;
 }
 
 h1,h2,h3,h4,h5{
@@ -55,7 +58,7 @@ h{
       position: absolute;
       content: '';
       width: 30px;
-      background-color: #007ced;
+      background-color: $background_color;
       height: 2px;
       bottom: 0;
     }
@@ -84,7 +87,7 @@ h{
     > span {
       width: 30px !important;
       height: 3px !important;
-      background: #007ced !important;
+      background: $background_color!important;
       transition: all 0.2s ease-in-out !important;
     }
   }
