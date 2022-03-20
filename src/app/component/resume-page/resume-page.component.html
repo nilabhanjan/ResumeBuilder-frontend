@@ -1,1 +1,33 @@
-<p>resume-page works!</p>
+
+
+<div class=" container dark:text-white bg-gray-50 dark:bg-gray-800 lg:m-10 lg:rounded-2xl">
+
+  <div class="block-title pb2 mb-1" [ngClass]="{'dark-h2-after':darkMode}">
+    <h2>Education</h2>
+  </div>
+    <div class="grid md:grid-cols-2 grid-cols-1 mt-10">
+      <div class="flex flex-row pb-5" *ngFor="let data of dataArray">
+        <div class="flex-1 pr-7">
+          <button class="button
+          border-blue-500 hover:bg-blue-500 hover:text-white mb-5 disabled ">{{data.duration}}</button>
+          <h4 class="text-lg leading-5 pb-2">{{data.title}}</h4>
+          <p class="text-justify text-sm leading-5">{{data.description}}</p>
+        </div>
+      </div>
+    </div>
+  <div>
+    <div class="block-title pb2 mb-1" [ngClass]="{'dark-h2-after':darkMode}">
+      <h2>Skills</h2>
+    </div>
+    <div class="grid md:grid-cols-2 grid-cols-1 mt-10">
+      <div class="flex flex-row pb-5" *ngFor="let data of skillsArray">
+        <div class="flex-1 pr-7">
+          <p class="text-justify text-sm leading-5">{{data.skill}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
