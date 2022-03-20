@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ClassService} from "../../../services/class.service";
-import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-portfolio',
@@ -8,8 +6,7 @@ import {Subscription} from "rxjs";
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-  darkMode: boolean = false
-  subscription: Subscription
+
   ResearchArray:{data:string}[] = [
     {
       data:"Facial Recognition Based Door Locking and Unlocking Mechanism Based on\n" +
@@ -47,15 +44,10 @@ export class PortfolioComponent implements OnInit {
     }
   ]
 
-  constructor(private classService: ClassService) {
-    this.subscription = classService.getDarkMode().subscribe((value) => {
-      this.darkMode = value
-    })
+  constructor() {
+
   }
 
-  ngOnDestroy() {
-    this.subscription.unsubscribe()
-  }
 
   ngOnInit(): void {
   }
