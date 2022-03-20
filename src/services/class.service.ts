@@ -8,21 +8,23 @@ export class ClassService {
   private darkMode:BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false)
   private DARK_MODE_KEY='dark_mode'
   constructor() {
-    let darkModeLocalStorage = this.getLocalStorageKeyStorage(this.DARK_MODE_KEY)
-    if(darkModeLocalStorage){
-      this.darkMode.next(Boolean(darkModeLocalStorage))
-    }
+    this.init()
   }
   getDarkMode(){
     return this.darkMode
   }
-  toggleMode(){
-   let value = this.darkMode.value
-    value = !value
-    this.darkMode.next(value)
-    this.setKeyValueToLocalStorage(this.DARK_MODE_KEY,value)
+  init(){
+    let darkModeLocalStorage = (this.getLocalStorageKeyStorage(this.DARK_MODE_KEY) == 'true')
+    this.darkMode.next(darkModeLocalStorage)
   }
-  setKeyValueToLocalStorage(key:string,value:any){
+  toggleMode(){
+   let value:boolean = (this.getLocalStorageKeyStorage(this.DARK_MODE_KEY)=='true')
+    value = !value
+    this.setKeyValueToLocalStorage(this.DARK_MODE_KEY,String(value))
+    this.init()
+  }
+  setKeyValueToLocalStorage(key:string,value:string){
+    console.log(`set to localstorage key: ${key} value: ${value} `)
     localStorage.setItem(key, value)
   }
   getLocalStorageKeyStorage(key:string){
