@@ -3,30 +3,17 @@
   <div class="block-title pb2 mb-1" [ngClass]="{'dark-h2-after':darkMode}">
     <h2>About Me</h2>
   </div>
-<div class="grid grid-cols-2 m-6">
-  <div class="divs">
-    <i class="gg-profile"></i>
-    <h4 class="">About</h4>
-    <p>Freshly Graduate in Master of Science Information Technology looking for an opportunity to move ahead in career.</p>
-  </div>
 
-  <div class="divs">
-    <i class="gg-organisation"></i>
-    <h4>Education</h4>
-    <p>Freshly Graduate in Master of Science Information Technology looking for an opportunity to move ahead in career.</p>
-  </div>
+  <div class="grid md:grid-cols-2 grid-cols-1 mt-10">
+    <div class="flex flex-row pb-5" *ngFor="let data of dataArray">
+      <div class="flex-none w-12 ">
+        <i [class]="data.icon"></i>
+      </div>
+      <div class="flex-1 pr-7">
+        <h4 class="text-lg leading-5 pb-2">{{data.title}}</h4>
+        <p class="text-justify text-sm leading-5">{{data.description}}</p>
+      </div>
+    </div>
 
-  <div class="divs">
-    <i class="gg-file-document"></i>
-    <h4>Goals</h4>
-    <p>Freshly Graduate in Master of Science Information Technology looking for an opportunity to move ahead in career.</p>
   </div>
-
-  <div class="divs">
-    <i class="gg-info"></i>
-    <h4>Address</h4>
-    <p>Freshly Graduate in Master of Science Information Technology looking for an opportunity to move ahead in career.</p>
-  </div>
-
-</div>
 </div>
