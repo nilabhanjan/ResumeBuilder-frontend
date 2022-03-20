@@ -13,6 +13,9 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { ResumeComponent } from './pages/resume/resume.component';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
+import { BlogComponent } from './component/blog/blog.component';
+import { ContactComponent } from './component/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,10 @@ import { ResumeComponent } from './pages/resume/resume.component';
     MiddleComponent,
     ResumePageComponent,
     AboutmeComponent,
-    ResumeComponent
+    ResumeComponent,
+    PortfolioComponent,
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

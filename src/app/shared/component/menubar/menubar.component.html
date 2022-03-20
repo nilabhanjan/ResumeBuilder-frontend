@@ -6,8 +6,7 @@
           <!-- Mobile menu button-->
           <button type="button"
                   class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white dark:hover:bg-gray-700 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                  (click)="menuBarToggle = !menuBarToggle"
-          >
+                  (click)="menuBarToggle = !menuBarToggle" >
             <span class="sr-only">Open main menu</span>
 
             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -37,9 +36,12 @@
             Me</a>
           <a routerLink="/resume" routerLinkActive="text-gray-700 dark:text-white"
              class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Resume</a>
-          <a class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Portfolio</a>
-          <a class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Blog</a>
-          <a class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Contact</a>
+          <a routerLink="/portfolio" routerLinkActive="text-gray-700 dark:text-white"
+            class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Portfolio</a>
+          <a routerLink="/blog" routerLinkActive="text-gray-700 dark:text-white"
+            class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Blog</a>
+          <a routerLink="/contact" routerLinkActive="text-gray-700 dark:text-white"
+             class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Contact</a>
           <a class="cursor-pointer text-xl" (click)="updateDarkMode()">
             <fa-icon class="text-gray-200" [icon]="faMoon" *ngIf="darkMode"></fa-icon>
             <fa-icon class="text-yellow-500" [icon]="faSun" *ngIf="!darkMode">></fa-icon>
@@ -58,12 +60,13 @@
         <a routerLink="/resume" routerLinkActive="text-gray-700 dark:text-white"
            class=" dark:hover:text-white  hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Resume</a>
 
-        <a href="#" class="dark:hover:text-white hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+        <a routerLink="/portfolio" routerLinkActive="text-gray-700 dark:text-white"
+          class="dark:hover:text-white hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
 
-        <a href="#"
+        <a routerLink="/blog" routerLinkActive="text-gray-700 dark:text-white"
            class=" dark:hover:text-white  hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Blog</a>
 
-        <a href="#"
+        <a routerLink="/contact" routerLinkActive="text-gray-700 dark:text-white"
            class=" dark:hover:text-white  hover:text-gray-700 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
 
         <a
