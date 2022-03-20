@@ -1,6 +1,5 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
-import {ClassService} from "../../../services/class.service";
-import {Subscription} from "rxjs";
+import {Component, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-blog',
