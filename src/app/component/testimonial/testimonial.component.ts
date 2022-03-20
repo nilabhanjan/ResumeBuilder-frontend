@@ -1,8 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {faQuoteLeft} from "@fortawesome/free-solid-svg-icons";
 import {faQuoteRight} from "@fortawesome/free-solid-svg-icons";
-import {Subscription} from "rxjs";
-import {ClassService} from "../../../services/class.service";
 import { OwlOptions } from 'ngx-owl-carousel-o';
 @Component({
   selector: 'app-testimonial',
@@ -12,8 +10,6 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class TestimonialComponent implements OnInit,OnDestroy {
   faQuoteLeft =faQuoteLeft
   faQuoteRight=faQuoteRight
-  darkMode:boolean=false
-  subscription:Subscription
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -58,13 +54,11 @@ export class TestimonialComponent implements OnInit,OnDestroy {
       firm:'Locost Accessories'
     },
   ]
-  constructor(private classService:ClassService) {
-    this.subscription=classService.getDarkMode().subscribe((value)=>{
-      this.darkMode = value
-    })
+  constructor() {
+
   }
   ngOnDestroy() {
-    this.subscription.unsubscribe()
+
   }
 
   ngOnInit(): void {

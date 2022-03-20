@@ -1,0 +1,14 @@
+<div class="dark:text-white">
+  <app-title title="Clients"></app-title>
+  <div class="pt-5">
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let client of clientsArray">
+      <div class="client-block">
+        <a [href]="client.web_url">
+        <img [src]="client.img_url" [alt]="client.name"/>
+        </a>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+  </div>
+</div>

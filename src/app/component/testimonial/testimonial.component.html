@@ -1,8 +1,5 @@
 <div class="dark:text-white">
-  <div class="p-2"></div>
-  <div class="block-title pb2 mb-1" [ngClass]="{'dark-h2-after':darkMode}">
-    <h2>Testimonials</h2>
-  </div>
+  <app-title title="Testimonial"></app-title>
   <owl-carousel-o [options]="customOptions">
     <ng-template carouselSlide *ngFor="let testimonial of testimonialArray">
       <div class="testimonial ">
