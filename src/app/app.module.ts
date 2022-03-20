@@ -9,7 +9,10 @@ import { TestimonialComponent } from './component/testimonial/testimonial.compon
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MiddleComponent } from './component/middle/middle.component';
 import { ResumePageComponent } from './component/resume-page/resume-page.component';
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { AboutmeComponent } from './pages/aboutme/aboutme.component';
+import { ResumeComponent } from './pages/resume/resume.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +21,16 @@ import { ResumePageComponent } from './component/resume-page/resume-page.compone
     TestimonialComponent,
     InfoComponent,
     MiddleComponent,
-    ResumePageComponent
+    ResumePageComponent,
+    AboutmeComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -27,12 +27,12 @@
          </div>
         </div>
       </div>
-      <div class="hidden inset-y-0 right-0 flex items-center pr-2 sm:static sm:block sm:inset-auto sm:ml-6 sm:pr-0">
-        <a  class="text-gray-400 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">About Me</a>
-        <a  class="text-gray-400 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Resume</a>
-        <a  class="text-gray-400 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Portfolio</a>
-        <a  class="text-gray-400 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Blog</a>
-        <a  class="text-gray-400 dark:text-gray-300 hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Contact</a>
+      <div class="hidden inset-y-0 right-0 flex items-center pr-2 sm:static sm:block sm:inset-auto sm:ml-6 sm:pr-0 text-gray-400 dark:text-gray-400">
+        <a routerLink="/" routerLinkActive="text-gray-700 dark:text-white" [routerLinkActiveOptions]="{ exact: true }" class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">About Me</a>
+        <a routerLink="/resume" routerLinkActive="text-gray-700 dark:text-white" class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Resume</a>
+        <a  class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Portfolio</a>
+        <a  class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Blog</a>
+        <a  class="hover:text-gray-700 dark:hover:text-white px-5 py-2 rounded-md text-sm font-medium cursor-pointer">Contact</a>
         <a class="cursor-pointer text-xl" (click)="updateDarkMode()">
           <fa-icon class="text-gray-200" [icon]="faMoon" *ngIf="darkMode"></fa-icon>
           <fa-icon class="text-yellow-500" [icon]="faSun" *ngIf="!darkMode">></fa-icon>

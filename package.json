@@ -23,6 +23,8 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "animate.css": "^4.1.1",
+    "ngx-owl-carousel-o": "^7.0.2",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "tw-elements": "^1.0.0-alpha11",
