@@ -8,6 +8,7 @@ import { InfoComponent } from './component/info/info.component';
 import { TestimonialComponent } from './component/testimonial/testimonial.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MiddleComponent } from './component/middle/middle.component';
+import { ResumePageComponent } from './component/resume-page/resume-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MiddleComponent } from './component/middle/middle.component';
     InfoComponent,
     TestimonialComponent,
     InfoComponent,
-    MiddleComponent
+    MiddleComponent,
+    ResumePageComponent
   ],
   imports: [
     BrowserModule,
