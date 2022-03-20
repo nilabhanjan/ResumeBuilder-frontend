@@ -15,6 +15,9 @@ import { AboutmeComponent } from './pages/aboutme/aboutme.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { ClientsComponent } from './component/clients/clients.component';
 import { TitleComponent } from './shared/component/title/title.component';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
+import { BlogComponent } from './component/blog/blog.component';
+import { ContactComponent } from './component/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +28,10 @@ import { TitleComponent } from './shared/component/title/title.component';
     MiddleComponent,
     ResumePageComponent,
     AboutmeComponent,
+    ResumeComponent,
+    PortfolioComponent,
+    BlogComponent,
+    ContactComponent,
     ResumeComponent,
     ClientsComponent,
     TitleComponent

@@ -33,7 +33,13 @@ export class ResumePageComponent implements OnInit, OnDestroy {
       skill:'HTML'
     },
     {
-      skill:'CSS'
+      skill:'CSS/SCSS'
+    },
+    {
+      skill:'Angular'
+    },
+    {
+      skill:'Tailwind CSS'
     },
     {
       skill:'C'
