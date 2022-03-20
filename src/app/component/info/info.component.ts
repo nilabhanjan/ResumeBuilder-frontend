@@ -32,7 +32,6 @@ export class InfoComponent implements OnInit, OnDestroy {
   }
 
   @HostListener('mousemove', ['$event']) onMouseMove(event: any) {
-    console.log(event.clientX, event.clientY);
     this.mouseCoordinates ={
       x: event.clientX*0.005,
       y: event.clientY*0.005
