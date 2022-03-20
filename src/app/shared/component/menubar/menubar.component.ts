@@ -13,6 +13,7 @@ export class MenubarComponent implements OnInit, OnDestroy {
   faMoon=faMoon
   faSun=faSun
   darkMode=false
+  menuBarToggle=false
   subscription:Subscription
   constructor(private classService:ClassService) {
     this.subscription=classService.getDarkMode().subscribe((value)=>{
