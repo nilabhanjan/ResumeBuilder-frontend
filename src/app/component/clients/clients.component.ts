@@ -10,29 +10,44 @@ export class ClientsComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
       0: {
-        items: 1
+        items: 2
       },
       400: {
-        items: 2
+        items: 4
       },
       740: {
-        items: 2
+        items: 6
       },
       940: {
         items: 6
       }
     },
-    nav: true
+    nav: false
   }
   clientsArray:{name:string,img_url:string,web_url:string}[]=[
+    {
+      name: 'Golden Grid',
+      img_url: 'https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/goldengrid.png',
+      web_url: '#'
+    },
+    {
+      name: 'Golden Grid',
+      img_url: 'https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/goldengrid.png',
+      web_url: '#'
+    },
+    {
+      name: 'Golden Grid',
+      img_url: 'https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/goldengrid.png',
+      web_url: '#'
+    },
     {
       name: 'Golden Grid',
       img_url: 'https://lmpixels.com/wp/leven-wp/wp-content/uploads/2019/12/goldengrid.png',

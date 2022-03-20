@@ -12,10 +12,10 @@ export class TestimonialComponent implements OnInit,OnDestroy {
   faQuoteRight=faQuoteRight
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
+    dots: true,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
@@ -23,7 +23,7 @@ export class TestimonialComponent implements OnInit,OnDestroy {
         items: 1
       },
       400: {
-        items: 2
+        items: 1
       },
       740: {
         items: 2
@@ -32,7 +32,7 @@ export class TestimonialComponent implements OnInit,OnDestroy {
         items: 2
       }
     },
-    nav: true
+    nav: false
   }
   testimonialArray:{name:string,text:string,image_url:string,firm:string}[] =[
     {

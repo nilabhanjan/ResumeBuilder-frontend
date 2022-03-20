@@ -18,6 +18,9 @@ import { TitleComponent } from './shared/component/title/title.component';
 import { PortfolioComponent } from './component/portfolio/portfolio.component';
 import { BlogComponent } from './component/blog/blog.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { FunFactsComponent } from './component/fun-facts/fun-facts.component';
+import { AnimatedDigitComponent } from './shared/component/animated-digit/animated-digit.component';
+import { FooterComponent } from './shared/component/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,10 @@ import { ContactComponent } from './component/contact/contact.component';
     ContactComponent,
     ResumeComponent,
     ClientsComponent,
-    TitleComponent
+    TitleComponent,
+    FunFactsComponent,
+    AnimatedDigitComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div class="dark:text-white mb-10 pb-10">
+  <app-title title="Fun Facts"></app-title>
+  <div class="mt-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-5 gap-4 xl:grid-cols-4 xl:gap-10">
+      <div class="details" *ngFor="let fun of funFacts">
+        <div class="details-box">
+          <fa-icon class="details-icon" [icon]="fun.icon"></fa-icon>
+            <h4>{{fun.name}}</h4>
+          <span class="details-score">
+            <app-animated-digit [digit]="fun.digit" [duration]="1000">
+
+            </app-animated-digit></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
