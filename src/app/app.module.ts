@@ -21,6 +21,7 @@ import { ContactComponent } from './component/contact/contact.component';
 import { FunFactsComponent } from './component/fun-facts/fun-facts.component';
 import { AnimatedDigitComponent } from './shared/component/animated-digit/animated-digit.component';
 import { FooterComponent } from './shared/component/footer/footer.component';
+import { ComingsoonComponent } from './pages/comingsoon/comingsoon.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,8 @@ import { FooterComponent } from './shared/component/footer/footer.component';
     TitleComponent,
     FunFactsComponent,
     AnimatedDigitComponent,
-    FooterComponent
+    FooterComponent,
+    ComingsoonComponent
   ],
   imports: [
     BrowserModule,

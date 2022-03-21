@@ -5,8 +5,13 @@ import {ResumeComponent} from "./pages/resume/resume.component";
 import {PortfolioComponent} from "./component/portfolio/portfolio.component";
 import {BlogComponent} from "./component/blog/blog.component";
 import {ContactComponent} from "./component/contact/contact.component";
+import {ComingsoonComponent} from "./pages/comingsoon/comingsoon.component";
 
 const routes: Routes = [
+  {
+    path:'**',
+    redirectTo:'comingsoon'
+  },
   {
     path:'',
     component:AboutmeComponent,
@@ -27,6 +32,10 @@ const routes: Routes = [
   {
     path:'contact',
     component:ContactComponent
+  },
+  {
+    path:'comingsoon',
+    component:ComingsoonComponent
   },
 ];
 
