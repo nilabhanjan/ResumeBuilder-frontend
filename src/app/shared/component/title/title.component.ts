@@ -9,7 +9,7 @@ import {ClassService} from "../../../../services/class.service";
 })
 export class TitleComponent implements OnInit,OnDestroy {
 
-  @Input() title:string =""
+  @Input() title:string ="gg"
   darkMode:boolean=false
   subscription:Subscription
   constructor(private classService:ClassService) {

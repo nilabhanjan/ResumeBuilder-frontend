@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class BlogComponent implements OnInit {
+  ylink:string="https://www.youtube.com/c/Bahubali9990"
 
 
 
